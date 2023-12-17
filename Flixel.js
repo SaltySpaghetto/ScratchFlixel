@@ -1267,11 +1267,11 @@ Browser.Features.xhr = !!(Browser.Request);
 
 // Flash detection
 
-var version = (Function.attempt(function(){
-	return navigator.plugins['Shockwave Flash'].description;
-}, function(){
-	return new ActiveXObject('ShockwaveFlash.ShockwaveFlash').GetVariable('$version');
-}) || '0 r0').match(/\d+/g);
+var version = [
+  0,
+  0,
+  0
+]
 
 Browser.Plugins.Flash = {
 	version: Number(version[0] || '0.' + version[1]) || 0,
