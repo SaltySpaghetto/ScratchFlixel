@@ -9968,16 +9968,16 @@ FlxFlash = new Class({
 		//		StageCanvas is a reference to the HTML Canvas element we draw the whole game on
 		//		MooTools abstracts all event listeners through addEvent
 
-		StageCanvas.addEvent("mousedown", FlxG.mouse.handleMouseDown.bindWithEvent(FlxG.mouse));
-		StageCanvas.addEvent("mouseup", FlxG.mouse.handleMouseUp.bindWithEvent(FlxG.mouse));
-		$(window).addEvent("keydown", this.onKeyDown.bindWithEvent(this));
-		$(window).addEvent("keyup", this.onKeyUp.bindWithEvent(this));
+		StageCanvas.addEvent("mousedown", FlxG.mouse.handleMouseDown.bindEvent(FlxG.mouse));
+		StageCanvas.addEvent("mouseup", FlxG.mouse.handleMouseUp.bindEvent(FlxG.mouse));
+		$(window).addEvent("keydown", this.onKeyDown.bindEvent(this));
+		$(window).addEvent("keyup", this.onKeyUp.bindEvent(this));
 		if(!FlxG.mobile)
 		{
-			//bindWithEvent to make sure "this" points to the right place within the handler function
-			StageCanvas.addEvent("mouseout", FlxG.mouse.handleMouseOut.bindWithEvent(FlxG.mouse));
-			StageCanvas.addEvent("mouseover", FlxG.mouse.handleMouseOver.bindWithEvent(FlxG.mouse));
-			StageCanvas.addEvent("mousewheel", FlxG.mouse.handleMouseWheel.bindWithEvent(FlxG.mouse));
+			//bindEvent to make sure "this" points to the right place within the handler function
+			StageCanvas.addEvent("mouseout", FlxG.mouse.handleMouseOut.bindEvent(FlxG.mouse));
+			StageCanvas.addEvent("mouseover", FlxG.mouse.handleMouseOver.bindEvent(FlxG.mouse));
+			StageCanvas.addEvent("mousewheel", FlxG.mouse.handleMouseWheel.bindEvent(FlxG.mouse));
 
 			//NOTE: Removed focus/blur events here. Only applies to Flash
 			//	For our purposes, no functional difference compared to mouse out/over
