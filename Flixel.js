@@ -9352,7 +9352,7 @@ FlxConsole = new Class({
 
 	update: function() {
 		var total = this.mtrTotal.average();
-		$('debugFPS').value = (Math.round(1000 / total));
+		//$('debugFPS').value = Scratch.vm.runtime.frameLoop.framerate;(Math.round(1000 / total));
 	},
 
 	toggle: function() {},
