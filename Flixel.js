@@ -1,3 +1,8 @@
+const vm = Scratch.vm;
+const runtime = vm.runtime;
+const renderer = runtime.renderer;
+const canvas = renderer.canvas;
+
 /*
 ---
 MooTools: the javascript framework
@@ -5862,7 +5867,7 @@ if (!CanvasRenderingContext2D.prototype.createImageData) {
 
 	CanvasRenderingContext2D.prototype.createImageData = function(sw, sh) {
 
-		var c = document.createElement('canvas');
+		var c = canvas;
 		c.width = sw; c.height = sh;
 		data = c.getContext('2d').getImageData(0, 0, sw, sh);
 		c = null;
@@ -6138,7 +6143,7 @@ BitmapData = new Class({
 		this.width = Width;
 		this.height = Height;
 		this._data = Array();		//pixel data array
-		this._canvas = document.createElement('canvas');
+		this._canvas = canvas;
 		this._canvas.width = this.width;
 		this._canvas.height = this.height;
 		this.context = this._canvas.getContext('2d');
