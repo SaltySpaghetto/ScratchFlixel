@@ -1,10 +1,5 @@
 //const canvas = document.getElementById('scratch-stage');
 
-StageCanvas = $('scratch-stage');
-StageContext = StageCanvas.getContext('2d');
-
-
-
 /*
 ---
 MooTools: the javascript framework
