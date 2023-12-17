@@ -8753,7 +8753,7 @@ FlxAnim = new Class({
 	}
 
 });
-FlxConsole = new Class({
+Flx_Console = new Class({
 
 	initialize: function(X, Y, Zoom) {
 		
@@ -9421,6 +9421,7 @@ FlxFlash = new Class({
 		//this.update.periodical(1000 * (1 / this.framerate), this);
 		this.framerate = 60;
 		setInterval(this.update.bind(this), 1000 * (1 / this.framerate));
+    this._created = true;
 	}
 
 
