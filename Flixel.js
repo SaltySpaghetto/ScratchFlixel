@@ -6301,7 +6301,7 @@ ColorTransform = new Class({
 	}
 
 });//TODO: Make this class!
-FlxG = new Class({
+SFlxG = new Class({
 
 	initialize: function() {
 		this.LIBRARY_NAME = "JSFlixel";
@@ -6771,7 +6771,7 @@ FlxG = new Class({
 });
 
 //Static class. Like FlxU, everything is static, so just set it to an instance of itself
-FlxG = new FlxG();
+FlxG = new SFlxG();
 FlxU = new Class({
 
 	initialize: function() {
