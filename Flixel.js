@@ -6771,7 +6771,7 @@ FlxG = new Class({
 });
 
 //Static class. Like FlxU, everything is static, so just set it to an instance of itself
-FlxG = new FlxG;
+FlxG = new FlxG();
 FlxU = new Class({
 
 	initialize: function() {
