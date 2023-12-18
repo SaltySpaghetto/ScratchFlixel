@@ -1,0 +1,59 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "down button",
+			"indices": [],
+			"name": "arrowDOWN"
+		},
+    {
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "up button",
+			"indices": [],
+			"name": "arrowUP"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "right button",
+			"indices": [],
+			"name": "arrowRIGHT"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "left button",
+			"indices": [],
+			"name": "arrowLEFT"
+		},
+	],
+	"no_antialiasing": false,
+	"position": [
+		0,
+		0
+	],
+	"flip_x": false,
+	"camera_position": [
+		0,
+		0
+	],
+	"scale": 1
+}
